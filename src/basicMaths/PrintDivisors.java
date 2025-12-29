@@ -1,3 +1,5 @@
+package basicMaths;
+
 import java.util.Scanner;
 
 public class PrintDivisors {
@@ -22,6 +24,7 @@ public class PrintDivisors {
             if(number%i==0) {
                 System.out.print(i+" ");
                 if((number/i)!=i) {
+                    System.out.println("came here during :"+ i +" and " +(number/i));
                     System.out.print((number/i)+" ");
                 }
             }

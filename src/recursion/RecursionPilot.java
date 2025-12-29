@@ -14,7 +14,7 @@ public class RecursionPilot {
         System.out.print("Entered number :" + number);
 
         callItself(number);
-        sc.close(); // Close
+        sc.close(); // Close₹
     }
 
     private static void callItself(int number1) {

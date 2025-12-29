@@ -1,6 +1,8 @@
+package basicMaths;
+
 import java.util.Scanner;
 
-public class ReverseNumber {
+public class CountDigits {
     public static void main(String[] args) {
         System.out.println("Main method");
 
@@ -9,19 +11,17 @@ public class ReverseNumber {
         System.out.print("Enter number of your choice: ");
         int number = sc.nextInt(); // Read integer input
 
-        System.out.println("Digits to be reversed from : " +number);
-        reverseNumber(number);
+        System.out.println("Digits to be counted from : " +number);
+        countDigits(number);
         sc.close(); // Close
     }
 
-    private static void reverseNumber(int number) {
-        int carry=0;
-        while (number>0) {
-            int lastDigit = number%10;
-            carry = (carry*10) +lastDigit;
+    private static void countDigits(int number) {
+        int count=0;
+        while(number>0) {
             number=number/10;
+            count++;
         }
-
-        System.out.println("Reversed number is :"+carry);
+        System.out.println("Total digits in given number are :" +count);
     }
 }
