@@ -1,4 +1,4 @@
-package basicMaths;
+package basicMathsDSA;
 
 import java.util.Scanner;
 
