@@ -1,8 +1,8 @@
-package recursion;
+package recursion.basics;
 
 import java.util.Scanner;
 
-public class PrintName {
+public class PrintReverseBacktrack {
     public static void main(String[] args) {
         System.out.println("Main method");
 
@@ -11,13 +11,14 @@ public class PrintName {
         System.out.print("Enter number of your choice: ");
         int number = sc.nextInt(); // Read integer input
 
-        printNameNTimes(1,number);
+        printTill1Backtracking(1, number);
         sc.close(); // Close
+
     }
 
-    private static void printNameNTimes(int i, int number) {
+    private static void printTill1Backtracking(int i, int number) {
         if(i>number) return;
-        System.out.println("Vishal");
-        printNameNTimes(i+1,number);
+        printTill1Backtracking(i+1,number);
+        System.out.println(i);
     }
 }

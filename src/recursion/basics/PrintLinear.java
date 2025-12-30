@@ -1,8 +1,8 @@
-package recursion;
+package recursion.basics;
 
 import java.util.Scanner;
 
-public class PrintLinearBackrtrack {
+public class PrintLinear {
     public static void main(String[] args) {
         System.out.println("Main method");
 
@@ -11,14 +11,14 @@ public class PrintLinearBackrtrack {
         System.out.print("Enter number of your choice: ");
         int number = sc.nextInt(); // Read integer input
 
-        printTillNByBacktracking(number);
+        printTillN(1,number);
         sc.close(); // Close
 
     }
 
-    private static void printTillNByBacktracking(int i) {
-        if(i<1) return;
-        printTillNByBacktracking(i-1);
+    private static void printTillN(int i, int number) {
+        if(i>number) return;
         System.out.println(i);
+        printTillN(i+1, number);
     }
 }

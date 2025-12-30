@@ -1,8 +1,8 @@
-package recursion;
+package recursion.basics;
 
 import java.util.Scanner;
 
-public class PrintLinear {
+public class PrintName {
     public static void main(String[] args) {
         System.out.println("Main method");
 
@@ -11,14 +11,13 @@ public class PrintLinear {
         System.out.print("Enter number of your choice: ");
         int number = sc.nextInt(); // Read integer input
 
-        printTillN(1,number);
+        printNameNTimes(1,number);
         sc.close(); // Close
-
     }
 
-    private static void printTillN(int i, int number) {
+    private static void printNameNTimes(int i, int number) {
         if(i>number) return;
-        System.out.println(i);
-        printTillN(i+1, number);
+        System.out.println("Vishal");
+        printNameNTimes(i+1,number);
     }
 }
