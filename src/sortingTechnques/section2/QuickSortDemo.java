@@ -47,7 +47,7 @@ public class QuickSortDemo {
         int j=high;
 
         while (i<j) {
-            while (arr[i]<=pivot && i<=high) {
+            while (arr[i]<=pivot && i<high) {
                 i++;
             }
 
